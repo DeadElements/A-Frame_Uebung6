@@ -37,7 +37,7 @@
 
 
             <!--Gltf models-->
-            <a-gltf-model src="#portal" position="0 3.30374 15" rotation="0 180 0" scale="2 2 1"></a-gltf-model>
+            <a-gltf-model id="portal1" src="#portal" visible="false" position="0 3.30374 15" rotation="0 180 0" scale="2 2 1"></a-gltf-model>
             <a-gltf-model src="#space" position="-43.35 -24.48577 24" rotation="-34.37 -2.37 0"></a-gltf-model>
             <a-gltf-model src="#tree1" position="12.23475 0 -16.24642" scale="0.05 0.05 0.05"></a-gltf-model>
             <a-gltf-model src="#alien" scale="5 5 5" rotation="-34.02 152.12 -0.14" position="47.09159 18.73176 -56.53109"></a-gltf-model>
@@ -56,25 +56,25 @@
 
 
             <!--portal base-->
-            <a-entity geometry="primitive: cylinder; radius: 6.21" position="0 0 13.78828" material="shader: flat; side: double; vertexColors: vertex; color: #5c5c5c"></a-entity>
+            <a-entity id="base1" visible="false" geometry="primitive: cylinder; radius: 6.21" position="0 0 13.78828" material="shader: flat; side: double; vertexColors: vertex; color: #5c5c5c"></a-entity>
             <!--second portal base-->
-            <a-entity geometry="primitive: cylinder; radius: 6.21" position="0 -5 13.78828" material="shader: flat; side: double; vertexColors: vertex; color: #5c5c5c"></a-entity>
+            <a-entity id="base2" visible="false" geometry="primitive: cylinder; radius: 6.21" position="0 -5 13.78828" material="shader: flat; side: double; vertexColors: vertex; color: #5c5c5c"></a-entity>
             <!--portalbases conections-->
                 <!--front-->
-            <a-entity geometry="primitive: cylinder; height: 5.6; openEnded: true" position="3 -2.4 9.73" material="color: #12ba2e; emissive: #12ba2e"></a-entity>
-            <a-entity geometry="primitive: cylinder; height: 5.6; openEnded: true" position="-2.4 -2.4 9.73" material="color: #12ba2e; emissive: #12ba2e"></a-entity>
+            <a-entity id="base3" visible="false" geometry="primitive: cylinder; height: 5.6; openEnded: true" position="3 -2.4 9.73" material="color: #12ba2e; emissive: #12ba2e"></a-entity>
+            <a-entity id="base4" visible="false" geometry="primitive: cylinder; height: 5.6; openEnded: true" position="-2.4 -2.4 9.73" material="color: #12ba2e; emissive: #12ba2e"></a-entity>
                 <!--middle-->
-            <a-entity geometry="primitive: cylinder; height: 5.6; openEnded: true" position="4.48284 -2.4 14.27048" material="color: #12ba2e; emissive: #12ba2e"></a-entity>
-            <a-entity geometry="primitive: cylinder; height: 5.6; openEnded: true" position="-4.34086 -2.4 14.29692" material="color: #12ba2e; emissive: #12ba2e"></a-entity>
+            <a-entity id="base5" visible="false" geometry="primitive: cylinder; height: 5.6; openEnded: true" position="4.48284 -2.4 14.27048" material="color: #12ba2e; emissive: #12ba2e"></a-entity>
+            <a-entity id="base6" visible="false" geometry="primitive: cylinder; height: 5.6; openEnded: true" position="-4.34086 -2.4 14.29692" material="color: #12ba2e; emissive: #12ba2e"></a-entity>
                 <!--back-->
-            <a-entity geometry="primitive: cylinder; height: 5.6; openEnded: true" position="-2.4 -2.4 17.35207" material="color: #12ba2e; emissive: #12ba2e"></a-entity>
-            <a-entity geometry="primitive: cylinder; height: 5.6; openEnded: true" position="2.00958 -2.6 17.88028" material="color: #12ba2e; emissive: #12ba2e"></a-entity>
+            <a-entity id="base7" visible="false" geometry="primitive: cylinder; height: 5.6; openEnded: true" position="-2.4 -2.4 17.35207" material="color: #12ba2e; emissive: #12ba2e"></a-entity>
+            <a-entity id="base8" visible="false" geometry="primitive: cylinder; height: 5.6; openEnded: true" position="2.00958 -2.6 17.88028" material="color: #12ba2e; emissive: #12ba2e"></a-entity>
             <!--beacon-->
             <a-entity id="beacon" visible="false" geometry="primitive: cylinder; height: 250; radius: 1.75; thetaLength: 360.45" material="color: #1f1e1e" position="0 -124.21335 13.8538"></a-entity>
                 <!-- beacon ring1-->
-                <a-entity geometry="primitive: torus; radius: 6.74; radiusTubular: 0.08" material="color: #1f1e1e" position="0 0 13.86 " rotation="90 0 0"></a-entity>
-                <a-entity geometry="primitive: torus; radius: 5.51; radiusTubular: 0.08" material="color: #1f1e1e" position="0 -2.5 13.86 " rotation="90 0 0"></a-entity>
-                <a-entity geometry="primitive: torus; radius: 6.74; radiusTubular: 0.08" material="color: #1f1e1e" position="0 -5 13.86 " rotation="90 0 0"></a-entity>
+                <a-entity id="base9" visible="false" geometry="primitive: torus; radius: 6.74; radiusTubular: 0.08" material="color: #1f1e1e" position="0 0 13.86 " rotation="90 0 0"></a-entity>
+                <a-entity id="base10" visible="false" geometry="primitive: torus; radius: 5.51; radiusTubular: 0.08" material="color: #1f1e1e" position="0 -2.5 13.86 " rotation="90 0 0"></a-entity>
+                <a-entity id="base11" visible="false" geometry="primitive: torus; radius: 6.74; radiusTubular: 0.08" material="color: #1f1e1e" position="0 -5 13.86 " rotation="90 0 0"></a-entity>
                 
                 <!--animated rings-->
                 <a-entity id="anm1" visible="false" geometry="primitive: torus; radius: 2.73; radiusTubular: 0.32" material="color: #FFFFFF" position="0 -9.90997 13.86" rotation="90 0 0" animation="property: position; to: 0 -200.90997 13.86; dur: 4000; easing: linear; loop: true"></a-entity>
@@ -84,7 +84,7 @@
             <!--<a-entity geometry="primitive: cylinder; height: 0.48; radius: 0.37" position="-3.630 3.173 14.203" rotation="90 0 0" material="color: #00ff4c"
                 event-set__enter="_event: mouseenter; position: -3.630 10.173 14.203"></a-entity> -->   
             
-            <a-entity id="button" geometry="primitive: cylinder; height: 0.48; radius: 0.37" position="-3.630 3.173 14.203" rotation="90 0 0" material="color: #00ff4c"></a-entity>
+            <a-entity id="button" visible="false" geometry="primitive: cylinder; height: 0.48; radius: 0.37" position="-3.630 3.173 14.203" rotation="90 0 0" material="color: #00ff4c"></a-entity>
             
             <!--Tree light-->
             <a-entity light="color: #d6c2c2" position="-2.25 -0.41 -3.65"></a-entity>
@@ -97,38 +97,80 @@
                 event-set__enter="_event: mouseenter; material.color: #FF0000">
             </a-box>-->
 
-            
-        
-            
 
             <!-- sound -->
-            <a-box color="#141f16" position="9.358 4.069 -14.260" sound="src: #music;loop: true; autoplay: true; distanceModel: exponential; rolloffFactor: 1.5; volume: 6;"></a-box>
+            <a-box id="musicbox" color="#141f16" position="9.358 4.069 -14.260" sound="src: #music;loop: true; autoplay: true; distanceModel: exponential; rolloffFactor: 1.5; volume: 6;"></a-box>
         </a-scene>
     </body>
     <script>
-        var visible = false;
-        document.querySelector('#button').addEventListener('click', function () {
-            if(visible==false) {
+        var portalvisible = false;
+        var beaconvisible = false;
+        document.querySelector('#musicbox').addEventListener('click', function () {
+            if(portalvisible==false) {
+                document.querySelector('#portal1').setAttribute('visible', 'true');
+                document.querySelector('#button').setAttribute('visible', 'true');
+
+                document.querySelector('#base1').setAttribute('visible', 'true');
+                document.querySelector('#base2').setAttribute('visible', 'true');
+                document.querySelector('#base3').setAttribute('visible', 'true');
+                document.querySelector('#base4').setAttribute('visible', 'true');
+                document.querySelector('#base5').setAttribute('visible', 'true');
+                document.querySelector('#base6').setAttribute('visible', 'true');
+                document.querySelector('#base7').setAttribute('visible', 'true');
+                document.querySelector('#base8').setAttribute('visible', 'true');
+                document.querySelector('#base9').setAttribute('visible', 'true');
+                document.querySelector('#base10').setAttribute('visible', 'true');
+                document.querySelector('#base11').setAttribute('visible', 'true');
+
+                portalvisible = true;
+            }else{
+                document.querySelector('#portal1').setAttribute('visible', 'false');
+                document.querySelector('#button').setAttribute('visible', 'false');
+
+                document.querySelector('#base1').setAttribute('visible', 'false');
+                document.querySelector('#base2').setAttribute('visible', 'false');
+                document.querySelector('#base3').setAttribute('visible', 'false');
+                document.querySelector('#base4').setAttribute('visible', 'false');
+                document.querySelector('#base5').setAttribute('visible', 'false');
+                document.querySelector('#base6').setAttribute('visible', 'false');
+                document.querySelector('#base7').setAttribute('visible', 'false');
+                document.querySelector('#base8').setAttribute('visible', 'false');
+                document.querySelector('#base9').setAttribute('visible', 'false');
+                document.querySelector('#base10').setAttribute('visible', 'false');
+                document.querySelector('#base11').setAttribute('visible', 'false');
+                
+                if (beaconvisible==true){
+                    document.querySelector('#button').setAttribute('material', 'color', '#00ff4c');
+                    document.querySelector('#beacon').setAttribute('visible', 'false');
+
+                    document.querySelector('#anm1').setAttribute('visible', 'false');
+                    document.querySelector('#anm2').setAttribute('visible', 'false');
+                    document.querySelector('#anm3').setAttribute('visible', 'false');
+                    beaconvisible = false;
+                }
+
+                portalvisible = false;
+            }
+          });
+
+          document.querySelector('#button').addEventListener('click', function () {
+            if(beaconvisible==false) {
                 this.setAttribute('material', 'color', 'red');
-                console.log('I was clicked!');
                 document.querySelector('#beacon').setAttribute('visible', 'true');
 
                 document.querySelector('#anm1').setAttribute('visible', 'true');
                 document.querySelector('#anm2').setAttribute('visible', 'true');
                 document.querySelector('#anm3').setAttribute('visible', 'true');
-                visible = true;
+                beaconvisible = true;
             }else{
                 this.setAttribute('material', 'color', '#00ff4c');
-                console.log('I was clicked!');
                 document.querySelector('#beacon').setAttribute('visible', 'false');
 
                 document.querySelector('#anm1').setAttribute('visible', 'false');
                 document.querySelector('#anm2').setAttribute('visible', 'false');
                 document.querySelector('#anm3').setAttribute('visible', 'false');
-                visible = false;
+                beaconvisible = false;
             }
-            
-            
-          });
+        });
     </script>
 </html>
